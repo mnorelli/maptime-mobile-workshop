@@ -7,8 +7,8 @@ In order to spend less time configuring a new project and more time building, th
 You will need to complete a couple of more steps to get it running:
 
 1. Open Android Studio and open this repository's android project folder when Android Studio gives you the option to `Open an exisiting Android Studio project`
-2. Double tap the `Shift` key on your keyboard and then type `strings.xml` to find and open the project's `strings.xml` file.
-3. Find the `mapbox_access_token` string value, and enter your access token as a string value where it says `PASTE_YOUR_TOKEN_HERE`. You can find your access token at https://account.mapbox.com/access-tokens/.
+2. Remain in Android Studio and then double tap the `Shift` key on your keyboard to open a search bar. Type `strings.xml` to find and open the project's `strings.xml` file. Alternatively, you can find the file by following this path `maptime-mobile-workshop/android/maptime-mobile/app/src/main/res/values/strings.xml`.
+3. Find the `mapbox_access_token` string value in the `strings.xml` file, and enter your access token as a string value where it says `PASTE_YOUR_TOKEN_HERE`. You can find your access token at https://account.mapbox.com/access-tokens/.
 4. Press the ![Screen Shot 2019-04-10 at 12 27 42 PM](https://user-images.githubusercontent.com/4394910/55907662-3983d180-5b8c-11e9-84ed-c3c4784bcb42.png)
 button on the top right corner to run the project. If you don't see a map but your app runs, make sure you've entered your access token correctly.
 

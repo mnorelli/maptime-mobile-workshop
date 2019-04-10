@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">maptime-mobile</string>
+    <string name="mapbox_access_token">PASTE_YOUR_TOKEN_HERE</string>
+</resources>
