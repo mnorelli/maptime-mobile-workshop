@@ -6,20 +6,27 @@ In order to spend less time configuring a new project and more time building, th
 
 You will need to complete a couple of more steps to get it running:
 
-1. Open Android Studio and open this repository's android project folder when Android Studio gives you the option to `Open an exisiting Android Studio project`
+1. Open Android Studio.
+2. Open the Android app's folder (`maptime-mobile-workshop/android/maptime-mobile`) when Android Studio gives you the option to `Open an exisiting Android Studio project`.
 2. Remain in Android Studio and then double tap the `Shift` key on your keyboard to open a search bar. Type `strings.xml` to find and open the project's `strings.xml` file. Alternatively, you can find the file by following this path `maptime-mobile-workshop/android/maptime-mobile/app/src/main/res/values/strings.xml`.
 3. Find the `mapbox_access_token` string value in the `strings.xml` file, and enter your access token as a string value where it says `PASTE_YOUR_TOKEN_HERE`. You can find your access token at https://account.mapbox.com/access-tokens/.
 4. Press the ![Screen Shot 2019-04-10 at 12 27 42 PM](https://user-images.githubusercontent.com/4394910/55907662-3983d180-5b8c-11e9-84ed-c3c4784bcb42.png)
-button on the top right corner to run the project. If you don't see a map but your app runs, make sure you've entered your access token correctly.
+button found towards the top left corner, to run the project. If you don't see a map but your app runs, make sure that you've entered your access token correctly.
+
+You should see this! 👉  ![ezgif com-resize (6)](https://user-images.githubusercontent.com/4394910/56067873-9bca0700-5d31-11e9-930b-bdb0a1632056.gif)
+
 
 ## Task 2 
 ### Understanding the basics of the Mapbox Maps SDKs for Android
+
+First make sure that you've gone through the installation instructions found at the top of this page.
 
 All of your code will go in the `MainActivity` file. Every time you want run this file, you will need to re-run the application. Comments are prefaced with a double forward slash (`//`), and will guide you through the exercises.
 
 ## Task 3 
 ### Advanced topics within the Mapbox Maps SDKs for Android
 
+First make sure that you've gone through the installation instructions found at the top of this page.
 
 To set up your project for the next round of tasks, navigate to the `AndroidManifest.xml` file and move the following intent filter to the `TaskThreeActivity` section in the `AndroidManifest.xml` file. This is to tell the Android app to use the `TaskThreeActivity` file as the first screen displayed when the app opens. 
 
