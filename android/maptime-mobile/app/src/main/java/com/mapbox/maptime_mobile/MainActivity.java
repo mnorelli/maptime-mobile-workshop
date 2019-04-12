@@ -51,7 +51,8 @@ public class MainActivity extends AppCompatActivity {
             // Can you add a marker at the center of the map?
             // The most basic way to add a marker is using a SymbolLayer icon.
             // • API reference: https://docs.mapbox.com/android/api/map-sdk/7.3.0/com/mapbox/mapboxsdk/style/layers/SymbolLayer.html
-            // • Example reference: https://docs.mapbox.com/android/maps/examples/marker-symbol-layer/
+            // • Example reference: https://github.com/mapbox/mapbox-android-demo/blob/033426da7ea8b0c424c48a4e7a6acae34dbec837/MapboxAndroidDemo/src/main/java/com/mapbox/mapboxandroiddemo/examples/styles/BasicSymbolLayerActivity.java
+            // • Example reference's GIF: https://github.com/mapbox/mapbox-android-demo/pull/1030#issue-269831788
 
 
           }

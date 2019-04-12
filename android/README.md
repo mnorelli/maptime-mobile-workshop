@@ -19,7 +19,7 @@ All of your code will go in the `MainActivity` file. Every time you want run thi
 ## Task #3: Advanced topics within the Mapbox Maps SDKs for Android
 
 
-To set up your project for the next round of tasks, navigate to the `AndroidManifest.xml` file and move the following intent filter to the `TaskThreeActivity` section in the `AndroidManifest.xml` file. This is to tell the Android app to open/use the `TaskThreeActivity` file as the first activity to open when the app opens.
+To set up your project for the next round of tasks, navigate to the `AndroidManifest.xml` file and move the following intent filter to the `TaskThreeActivity` section in the `AndroidManifest.xml` file. This is to tell the Android app to use the `TaskThreeActivity` file as the first screen displayed when the app opens. 
 
 ```
 <intent-filter>
