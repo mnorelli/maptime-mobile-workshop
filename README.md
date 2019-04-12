@@ -22,14 +22,14 @@ After you complete task #1, choose either the **Android** and **iOS** platform t
 This is where instructions will differ depending on which mobile platform you're working with, so select the appropriate option below:
 
 - [Working with iOS](https://github.com/mapbox/maptime-mobile-workshop/blob/master/ios/README.md#task-2)
-- Working with Android: _Link to readme header in android/README.md_
+- [Working with Android](https://github.com/mapbox/maptime-mobile-workshop/blob/master/android/README.md#task-2)
 
 ## Task #3: Advanced topics within the Mapbox Maps SDKs
 
 This is where instructions will differ depending on which mobile platform you're working with, so select the appropriate option below:
 
 - [Working with iOS](https://github.com/mapbox/maptime-mobile-workshop/blob/master/ios/README.md#task-3)
-- Working with Android: _Link to readme header in android/README.md_
+- [Working with Android](https://github.com/mapbox/maptime-mobile-workshop/blob/master/android/README.md#task-3)
 
 # Additional help & documentation:
 

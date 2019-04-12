@@ -13,7 +13,7 @@ You will need to complete a couple of more steps to get it running:
 3. Find the `MGLMapboxAccessToken` key, and enter your access token as a string value to the right of it. You can find your access token at https://account.mapbox.com/access-tokens/.
 4. Press the ▶️ button on the top left corner to run the project. You should see an iPhone simulator start up and then display a basic map. If you don't see a map but your app runs, make sure you entered your access token correctly.
 
-## Task 2:
+## Task 2
 ### Understanding the basics of the Mapbox Maps SDKs for iOS
 
 For this task, you will be working in the `FirstViewController.swift` file. Your goal is to:
@@ -23,7 +23,7 @@ For this task, you will be working in the `FirstViewController.swift` file. Your
 
 Comments are prefaced with a double forward slash (`//`), and will guide you through the exercises. If you want to see the results of each change you make to your code, you will need to re-run the application by pressing the ▶️ button on the top left corner of Xcode to run the project.
 
-## Task 3: 
+## Task 3 
 ### Advanced topics within the Mapbox Maps SDKs for iOS
 
 For this task, you will be working in the `SecondViewController.swift` file. Your goal is to:
