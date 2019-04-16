@@ -34,16 +34,19 @@ public class TaskThreeActivity extends AppCompatActivity implements MapView.OnDi
       @Override
       public void onMapReady(@NonNull final MapboxMap mapboxMap) {
 
-        mapboxMap.setStyle(Style.MAPBOX_STREETS,
-
-
+        mapboxMap.setStyle(Style.DARK,
           new Style.OnStyleLoaded() {
             @Override
             public void onStyleLoaded(@NonNull Style style) {
 
               // 🔥 Hot tip: Change the water color at runtime!
               // The map style being used already has its water color defined. But, we can change
-              // it at runtime through this code. This is called runtime styling, since we are changing
+              // it at runtime through this code.
+              //
+              // Run the app to see the custom rgb color used for the water color. Then delete
+              // this hot tip's code below and re-run the app to see the original water color.
+              //
+              // This is called runtime styling, since we are changing
               // the map's style at runtime. To change the water color, we need to retrieve the layer
               // containing the water data and then we set the new color of the water.
               // The returned result of any attempt to retrieve a layer in a map is an optional value that may
@@ -53,9 +56,8 @@ public class TaskThreeActivity extends AppCompatActivity implements MapView.OnDi
 
               if (style.getLayer("water") != null) {
                 Layer waterLayer = style.getLayer("water");
-                waterLayer.setProperties(fillColor(rgba(0, 0.58, 1, 1)));
+                waterLayer.setProperties(fillColor(rgba(4,147,255, 1)));
               }
-
 
               // ⭐️ Challenge: Customize color of the country borders
               // Using the above as a reference, can you change the color of the country borders?
@@ -77,6 +79,7 @@ public class TaskThreeActivity extends AppCompatActivity implements MapView.OnDi
               // • Add the new data source and style layer to the map's style
               //   API reference: https://docs.mapbox.com/android/api/map-sdk/7.3.0/com/mapbox/mapboxsdk/maps/Style.html
 
+              String earthquakeGeoJsonUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
 
               // ⭐️ Challenge: Style each circle based off of an earthquake's intensity
               // Once you have completed the above challenge, you will see black circles on your map
@@ -85,7 +88,8 @@ public class TaskThreeActivity extends AppCompatActivity implements MapView.OnDi
               // off its intensity. In this challenge, you should:
               // • Use the below dictionary of stop values to set the layer's circle color based on the
               //   severity of the earthquake, using the data source's "mag" field which represents its magnitude.
-              //   Example: https://docs.mapbox.com/android/maps/examples/style-circles-categorically/
+              //   Examples: https://docs.mapbox.com/android/maps/examples/style-circles-categorically
+              //             https://docs.mapbox.com/android/maps/examples/circle-layer-clustering
 
               Expression.Stop[] stopArray = new Expression.Stop[] {
                 stop(0, Color.GREEN),
