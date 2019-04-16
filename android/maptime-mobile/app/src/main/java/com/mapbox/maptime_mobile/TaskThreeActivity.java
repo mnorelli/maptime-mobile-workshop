@@ -94,7 +94,7 @@ public class TaskThreeActivity extends AppCompatActivity implements MapView.OnDi
 
               // Use can use https://htmlcolorcodes.com/color-picker if you'd like to find an exact color
               // for a data "stop".
-
+              
               //   Examples: https://docs.mapbox.com/android/maps/examples/style-circles-categorically
               //             https://docs.mapbox.com/android/maps/examples/circle-layer-clustering
 
