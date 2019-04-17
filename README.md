@@ -4,16 +4,15 @@ This project includes three tasks to help you learn how to use Mapbox tools on m
 
 ## Task #1: Beginning Mapbox Studio
 
-Here you will learn how to work with the web-based Mapbox Studio interface to design your own custom map.
+Here you will learn how to work with the web-based Mapbox Studio interface to design your own custom map. After you complete task #1, choose either the **Android** and **iOS** platform track to continue.
 
 ### Create a Mapbox Account
 
 - You will need to have a Mapbox account to start building. Head on over to [mapbox.com](https://www.mapbox.com/) to sign up.
 
-After you complete task #1, choose either the **Android** and **iOS** platform track to continue.
-
 ### Design a new custom style
 
+- *Go to Mapbox.com.studio to launch Mapbox Studio*
 - Using this tutorial, create and publish a new custom [Mapbox Studio Style](https://docs.mapbox.com/help/tutorials/create-a-custom-style/).
   - Already have data you want to visualize? Check out [this guide](https://docs.mapbox.com/studio-manual/overview/geospatial-data/) to learn how to upload your own custom data to use in a style.
 
