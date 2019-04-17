@@ -40,3 +40,5 @@ To set up your project for the next round of tasks, navigate to the `AndroidMani
 Delete the intent filter from the `<activity android:name=".MainActivity">` section in the `AndroidManifest.xml` file.
 
 Once you've completed this, you can move on to more advanced tasks by working in the `TaskThreeActivity` file. Comments are prefaced with a double forward slash (`//`), and will guide you through the next set of exercises.
+
+Your goal is something similar to 👉 ![ezgif com-resize (3)](https://user-images.githubusercontent.com/4394910/56252412-87a54300-606c-11e9-8405-481076cbf97c.gif)
