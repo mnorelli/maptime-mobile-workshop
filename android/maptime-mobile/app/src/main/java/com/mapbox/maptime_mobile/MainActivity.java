@@ -9,6 +9,11 @@ import com.mapbox.mapboxsdk.maps.MapView;
 import com.mapbox.mapboxsdk.maps.MapboxMap;
 import com.mapbox.mapboxsdk.maps.OnMapReadyCallback;
 import com.mapbox.mapboxsdk.maps.Style;
+import com.mapbox.mapboxsdk.camera.CameraPosition;
+import com.mapbox.mapboxsdk.camera.CameraUpdateFactory;
+import com.mapbox.mapboxsdk.geometry.LatLng;
+import com.mapbox.mapboxsdk.style.layers.SymbolLayer;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     mapView.onCreate(savedInstanceState);
     mapView.getMapAsync(new OnMapReadyCallback() {
       @Override
-      public void onMapReady(@NonNull MapboxMap mapboxMap) {
+      public void onMapReady(@NonNull final MapboxMap mapboxMap) {
 
 
         // ⭐️ Challenge: Customize the Mapbox Style
@@ -32,7 +37,16 @@ public class MainActivity extends AppCompatActivity {
         // Can you change the style URL below to point to your custom Mapbox Studio Style?
         // • Example reference: https://docs.mapbox.com/android/maps/examples/use-a-mapbox-studio-style/
 
-        mapboxMap.setStyle(Style.MAPBOX_STREETS, new Style.OnStyleLoaded() {
+        //mapboxMap.setStyle(Style.MAPBOX_STREETS, new Style.OnStyleLoaded() {
+       //mapboxMap.setStyle(, new Style.OnStyleLoaded() {
+            //mapboxMap.setStyle(Style.fromUrl("mapbox://styles/mnorelli/cihpqdnu7001bnpm4eq11giyl"), new Style.OnStyleLoaded() {
+        mapboxMap.setStyle(new Style.Builder().fromUrl("mapbox://styles/mnorelli/cihpqdnu7001bnpm4eq11giyl")
+
+
+
+
+
+                , new Style.OnStyleLoaded() {
           @Override
           public void onStyleLoaded(@NonNull Style style) {
 
@@ -45,7 +59,15 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+            CameraPosition position = new CameraPosition.Builder()
+                    .target(new LatLng(37.8, -122.2)) // Sets the new camera position
+                    .zoom(10) // Sets the zoom
+                    .bearing(350) // Rotate the camera
+                    .tilt(40) // Set the camera tilt
+                    .build(); // Creates a CameraPosition from the builder
 
+            mapboxMap.animateCamera(CameraUpdateFactory
+                    .newCameraPosition(position), 2000);
 
             // ⭐️ Challenge: Add a basic marker
             // Can you add a marker at the center of the map?
