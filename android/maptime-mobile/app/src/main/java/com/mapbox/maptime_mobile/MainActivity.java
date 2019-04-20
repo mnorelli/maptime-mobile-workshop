@@ -12,11 +12,12 @@ import com.mapbox.mapboxsdk.maps.Style;
 import com.mapbox.mapboxsdk.camera.CameraPosition;
 import com.mapbox.mapboxsdk.camera.CameraUpdateFactory;
 import com.mapbox.mapboxsdk.geometry.LatLng;
-import com.mapbox.mapboxsdk.style.layers.SymbolLayer;
 
 
 public class MainActivity extends AppCompatActivity {
-
+  private static final String SOURCE_ID = "SOURCE_ID";
+  private static final String ICON_ID = "ICON_ID";
+  private static final String LAYER_ID = "LAYER_ID";
   private MapView mapView;
 
   @Override
@@ -37,14 +38,7 @@ public class MainActivity extends AppCompatActivity {
         // Can you change the style URL below to point to your custom Mapbox Studio Style?
         // • Example reference: https://docs.mapbox.com/android/maps/examples/use-a-mapbox-studio-style/
 
-        //mapboxMap.setStyle(Style.MAPBOX_STREETS, new Style.OnStyleLoaded() {
-       //mapboxMap.setStyle(, new Style.OnStyleLoaded() {
-            //mapboxMap.setStyle(Style.fromUrl("mapbox://styles/mnorelli/cihpqdnu7001bnpm4eq11giyl"), new Style.OnStyleLoaded() {
         mapboxMap.setStyle(new Style.Builder().fromUrl("mapbox://styles/mnorelli/cihpqdnu7001bnpm4eq11giyl")
-
-
-
-
 
                 , new Style.OnStyleLoaded() {
           @Override
